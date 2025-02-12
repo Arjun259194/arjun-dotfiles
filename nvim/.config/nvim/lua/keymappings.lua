@@ -22,3 +22,15 @@ vim.keymap.set("n", "k", "gk", {})
 vim.keymap.set("v", "j", "gj", {})
 vim.keymap.set("v", "k", "gk", {})
 
+
+-- utils
+---- wraps selection into ""
+vim.keymap.set("v", "<leader>dq", "c\"<C-r>\"\"<Esc>", { noremap = true, silent = true })
+---- wraps currunt word on cursor into ""
+vim.keymap.set("n", "<leader>dq", "ciw\"<C-r>\"\"<Esc>", { noremap = true, silent = true })
+---- camelCase to snake_case
+vim.keymap.set("n", "<leader>sc", "viw:s/\\C\\([a-z]\\)\\([A-Z]\\)/\\1_\\l\\2/g<CR>", { noremap = true, silent = true })
+---- camelCase to kabab-case
+vim.keymap.set("n", "<leader>kc", "viw:s/\\C\\([a-z0-9]\\)\\([A-Z0-9]\\)/\\1-\\l\\2/g<CR>", { noremap = true, silent = true })
+
+

@@ -6,7 +6,7 @@ vim.opt.shiftwidth = tab_size
 
 vim.opt.expandtab = true
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.opt.wrap = true
 vim.opt.hlsearch = false
@@ -20,5 +20,5 @@ vim.opt.mouse = "a"
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 vim.opt.scrolloff = 2
-vim.o.cmdheight = 0
-vim.opt.laststatus = 0
+vim.o.cmdheight = 1
+vim.opt.laststatus = 1
