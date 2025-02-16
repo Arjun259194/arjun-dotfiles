@@ -1,0 +1,3 @@
+return {
+   "austinliuigi/smoke.nvim"
+}

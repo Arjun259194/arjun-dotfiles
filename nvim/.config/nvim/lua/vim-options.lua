@@ -1,4 +1,4 @@
-local tab_size = 3
+local tab_size = 2
 
 vim.opt.tabstop = tab_size
 vim.opt.softtabstop = tab_size
@@ -19,6 +19,6 @@ vim.g.mapleader = " "
 vim.opt.mouse = "a"
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
-vim.opt.scrolloff = 2
+vim.opt.scrolloff = 10
 vim.o.cmdheight = 1
 vim.opt.laststatus = 1
