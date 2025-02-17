@@ -28,4 +28,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 -- colorscheme - default:vague - try these new ones: smoke, yugen, smoke,lackluster-hack,lackluster-mint
-vim.cmd.colorscheme("vague")
+vim.cmd.colorscheme("catppuccin")
