@@ -30,7 +30,7 @@ return {
             lspconfig.rust_analyzer.setup({ capabilities = capabilities })
             lspconfig.gopls.setup({ capabilities = capabilities })
             lspconfig.dockerls.setup({ capabilities = capabilities })
-            lspconfig.ast_grep .setup({ capabilities = capabilities })
+            lspconfig.ast_grep.setup({ capabilities = capabilities })
             lspconfig.emmet_ls.setup({
                 capabilities = capabilities,
                 filetypes = {
