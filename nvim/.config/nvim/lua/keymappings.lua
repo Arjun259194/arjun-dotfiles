@@ -36,3 +36,5 @@ vim.keymap.set("n", "<leader>sc", "viw:s/\\C\\([a-z]\\)\\([A-Z]\\)/\\1_\\l\\2/g<
 ---- camelCase to kabab-case
 vim.keymap.set("n", "<leader>kc", "viw:s/\\C\\([a-z0-9]\\)\\([A-Z0-9]\\)/\\1-\\l\\2/g<CR>",
   { noremap = true, silent = true })
+---- kabab-case to camelCase
+vim.keymap.set("n", "<leader>cc", "viw:s/\\v-(.)/\\u\\1/g<CR>", { noremap = true, silent = true })

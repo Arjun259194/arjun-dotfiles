@@ -11,9 +11,9 @@ vim.opt.cursorline = true
 vim.opt.wrap = true
 vim.opt.hlsearch = true
 vim.opt.termguicolors = true
-vim.opt.linebreak = true       -- Prevent breaking words
-vim.opt.breakindent = true     -- Maintain indentation on wrapped lines
-vim.opt.showbreak = "↪ "       -- Shows line break
+vim.opt.linebreak = true -- Prevent breaking words
+vim.opt.breakindent = true -- Maintain indentation on wrapped lines
+vim.opt.showbreak = "↪ " -- Shows line break
 
 vim.g.mapleader = " "
 vim.opt.mouse = "a"
