@@ -1,0 +1,9 @@
+font-family = ZedMono NF Medium
+
+theme = catppuccin-mocha
+
+window-decoration = none
+
+background-opacity = 0.2
+
+background-blur-radius = 50
