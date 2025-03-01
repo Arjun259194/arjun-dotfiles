@@ -3,18 +3,19 @@
 Welcome to my **dotfiles** repository! This setup makes managing and applying configuration files effortless using **GNU Stow**, ensuring a clean and modular way to handle themes and settings across different applications.
 
 ## ✨ Features
-- **Catppuccin Mocha** 🎨 as the primary theme (other themes available too!)
+- **Rose Pine** 🎨 as the primary theme (other themes available too!)
 - Modular and easy-to-manage dotfiles with **GNU Stow**
 - Configurations for:
   - **tmux** 🖥️ - Custom keybindings and enhanced productivity
   - **kitty** 🐱 - Optimized terminal emulator settings
   - **Neovim** 📝 - A well-tuned editor setup
+  - and more...
 - Seamless **symlink-based** integration with your system
 
 ## 📦 Installation
 ### 1️⃣ Clone this repository
 ```bash
-git clone https://github.com/your-username/dotfiles.git ~/.dotfiles
+git clone https://github.com/Arjun259194/arjun-dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
@@ -34,6 +35,7 @@ brew install stow
 
 ### 3️⃣ Stow your configurations
 ```bash
+stow [available-config-dir]
 stow tmux
 stow kitty
 stow nvim
@@ -41,7 +43,7 @@ stow nvim
 This will create **symlinks** from `~/.dotfiles/{config}` to your home directory.
 
 ## 🎨 Switching Themes
-By default, the setup is themed with **Catppuccin Mocha**. However, other themes are available. To switch themes, modify the respective configuration files and rerun `stow`.
+By default, the setup is themed with **Rose Pine**. However, other themes are available. To switch themes, modify the respective configuration files and rerun `stow`.
 
 ## 📜 Unstowing (Removing Configurations)
 If you need to remove a configuration:
