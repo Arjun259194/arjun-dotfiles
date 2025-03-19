@@ -30,8 +30,13 @@ return {
       lspconfig.rust_analyzer.setup({ capabilities = capabilities })
       lspconfig.gopls.setup({ capabilities = capabilities })
       lspconfig.dockerls.setup({ capabilities = capabilities })
-      lspconfig.ast_grep.setup({ capabilities = capabilities })
       lspconfig.yamlls.setup({ capabilities = capabilities })
+      lspconfig.jdtls.setup({
+        capabilities = capabilities,
+        cmd = { "jdtls" },
+        root_dir = lspconfig.util.root_pattern("pom.xml", "gradle.build", ".git"),
+      })
+
 
 
       lspconfig.emmet_ls.setup({
