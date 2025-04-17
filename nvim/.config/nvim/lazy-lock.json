@@ -31,6 +31,7 @@
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "rose-pine": { "branch": "main", "commit": "7718965bdd1526b233f082da17e88b8bde7a7e6e" },
   "smoke.nvim": { "branch": "main", "commit": "dd9421f6ab6ecc328a6cdb0a3ce18ae184e6bdbf" },
+  "snacks.nvim": { "branch": "main", "commit": "bc0630e43be5699bb94dadc302c0d21615421d93" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "2a5ceff981501cff8f46871d5402cd3378a8ab6a" },
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope.nvim": { "branch": "master", "commit": "814f102cd1da3dc78c7d2f20f2ef3ed3cdf0e6e4" },
@@ -38,5 +39,6 @@
   "vague.nvim": { "branch": "main", "commit": "5a36db645d02ea4c9ffe43093aafce6b6addc72f" },
   "vim-tmux-navigator": { "branch": "master", "commit": "791dacfcfc8ccb7f6eb1c853050883b03e5a22fe" },
   "window-picker": { "branch": "main", "commit": "6382540b2ae5de6c793d4aa2e3fe6dbb518505ec" },
+  "yazi.nvim": { "branch": "main", "commit": "8418e7028f91feacffcf75236fd4e93a5a3fe911" },
   "yugen.nvim": { "branch": "main", "commit": "ae3af1dbbceb8a3702acd34c5ae7a223793b5873" }
 }
