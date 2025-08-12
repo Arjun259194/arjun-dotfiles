@@ -1,5 +1,4 @@
-font-family = JetBrainsMono NF Light
-theme = rose-pine
+font-family = JetBrainsMono NF SemiBold
 window-decoration = none
-background-opacity = 0.95
+background-opacity = 0.90
 background-blur-radius = 50
