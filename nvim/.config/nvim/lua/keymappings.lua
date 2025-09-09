@@ -1,40 +1,30 @@
+local opt = { noremap = true, silent = true }
+local keymap = vim.keymap
+
 -- save & quit keys
-vim.keymap.set("n", "<leader>ww", ":w<CR>", {})
-vim.keymap.set("n", "<leader>wa", ":wa<CR>", {})
-vim.keymap.set("n", "<leader>wq", ":wq<CR>", {})
-vim.keymap.set("n", "<leader>qq", ":q<CR>", {})
-vim.keymap.set("n", "<leader>qa", ":qa<CR>", {})
-vim.keymap.set("n", "<leader>W", ":wqa<CR>", {})
+keymap.set("n", "<leader>ww", ":w<CR>", opt)
+keymap.set("n", "<leader>wa", ":wa<CR>", opt)
+keymap.set("n", "<leader>wq", ":wq<CR>", opt)
+keymap.set("n", "<leader>qq", ":q<CR>", opt)
+keymap.set("n", "<leader>qa", ":qa<CR>", opt)
+keymap.set("n", "<leader>W", ":wqa<CR>", opt)
 
 -- split keys
-vim.keymap.set("n", "-", ":split<CR>", {})
-vim.keymap.set("n", "|", ":vsplit<CR>", {})
+keymap.set("n", "-", ":split<CR>", {})
+keymap.set("n", "|", ":vsplit<CR>", {})
 
--- running commands
-vim.keymap.set("n", "<leader>rr", ":!cargo run", {})
-vim.keymap.set("n", "<leader>rj", ":!node %", {})
-vim.keymap.set("n", "<leader>rt", ":!bun run %", {})
-vim.keymap.set("n", "<leader>rg", ":!go run .", {})
+keymap.set("i", "<C-BS>", "<C-W>", opt)
+keymap.set("n", "<C-BS>", "db", opt)
+keymap.set("n", "<C-a>", "gg<S-v>G", opt)
 
 -- navigate
-vim.keymap.set("n", "j", "gj", {})
-vim.keymap.set("n", "k", "gk", {})
-vim.keymap.set("v", "j", "gj", {})
-vim.keymap.set("v", "k", "gk", {})
+keymap.set("n", "j", "gj", opt)
+keymap.set("n", "k", "gk", opt)
+keymap.set("v", "j", "gj", opt)
+keymap.set("v", "k", "gk", opt)
 
 -- utils
 ---- This selects a whole block, run it where line with {, [ or ( is and it will select everthing inside the block
-vim.keymap.set("n", "<leader>hb", "V$%", {})
----- Selects a block and collaps it
-vim.keymap.set("n", "<leader>zc", "?{<CR>V$%zf", {})
----- wraps selection into ""
-vim.keymap.set("v", "<leader>dq", "c\"<C-r>\"\"<Esc>", { noremap = true, silent = true })
+keymap.set("n", "<leader>hb", "V$%", {})
 ---- wraps currunt word on cursor into ""
-vim.keymap.set("n", "<leader>dq", "ciw\"<C-r>\"\"<Esc>", { noremap = true, silent = true })
----- camelCase to snake_case
-vim.keymap.set("n", "<leader>sc", "viw:s/\\C\\([a-z]\\)\\([A-Z]\\)/\\1_\\l\\2/g<CR>", { noremap = true, silent = true })
----- camelCase to kabab-case
-vim.keymap.set("n", "<leader>kc", "viw:s/\\C\\([a-z0-9]\\)\\([A-Z0-9]\\)/\\1-\\l\\2/g<CR>",
-  { noremap = true, silent = true })
----- kabab-case to camelCase
-vim.keymap.set("n", "<leader>cc", "viw:s/\\v-(.)/\\u\\1/g<CR>", { noremap = true, silent = true })
+keymap.set("n", "<leader>dq", "ciw\"<C-r>\"\"<Esc>", { noremap = true, silent = true })

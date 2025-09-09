@@ -2,7 +2,7 @@ local tab_size = 2
 
 vim.g.mapleader = " "
 vim.opt.mouse = "a"
--- vim.opt.guicursor = "n-v-i-c:block-Cursor"
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 vim.opt.tabstop = tab_size
 vim.opt.softtabstop = tab_size
