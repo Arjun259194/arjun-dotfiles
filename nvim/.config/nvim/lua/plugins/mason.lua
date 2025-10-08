@@ -19,6 +19,7 @@ return {
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
       local lspconfig = require("lspconfig")
+
       lspconfig.phpactor.setup({ capabilities = capabilities })
       lspconfig.tailwindcss.setup({ capabilities = capabilities })
       lspconfig.pyright.setup({ capabilities = capabilities })
@@ -26,7 +27,6 @@ return {
       lspconfig.prismals.setup({ capabilities = capabilities })
       lspconfig.lua_ls.setup({ capabilities = capabilities })
       lspconfig.ts_ls.setup({ capabilities = capabilities })
-      lspconfig.glint.setup({ capabilities = capabilities })
       lspconfig.rust_analyzer.setup({ capabilities = capabilities })
       lspconfig.gopls.setup({ capabilities = capabilities })
       lspconfig.dockerls.setup({ capabilities = capabilities })
@@ -36,8 +36,6 @@ return {
         cmd = { "jdtls" },
         root_dir = lspconfig.util.root_pattern("pom.xml", "gradle.build", ".git"),
       })
-
-
 
       lspconfig.emmet_ls.setup({
         capabilities = capabilities,

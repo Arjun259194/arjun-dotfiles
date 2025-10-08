@@ -44,5 +44,4 @@ vim.g.clipboard = {
 
 require("lazy").setup("plugins")
 
--- vim.cmd.colorscheme("tokyonight")
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("catppuccin")
